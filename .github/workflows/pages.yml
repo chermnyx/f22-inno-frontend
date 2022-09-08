@@ -1,7 +1,16 @@
 on: [push]
 
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Push .
+        uses: actions/upload-pages-artifact@v1.0.4
+        with:
+          path: .
+
   deploy:
+    needs: [build]
     permissions:
       pages: write # to deploy to Pages
       id-token: write # to verify the deployment originates from an appropriate source
