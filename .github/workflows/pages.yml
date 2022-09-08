@@ -4,10 +4,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Push .
+      - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v1.0.4
         with:
-          path: .
+          path: ./
 
   deploy:
     needs: [build]
