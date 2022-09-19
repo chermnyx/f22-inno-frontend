@@ -27,6 +27,8 @@
 			crossorigin="anonymous"
 		></script>
 
+		<script src="script.js"></script>
+
 		<style>
 			body {
 				background: rgb(2, 0, 36);
@@ -39,11 +41,25 @@
 			}
 
 			.cover-container {
-				max-width: 42em;
+				max-width: 64em;
 			}
 
-			footer {
+			.section {
 				background-color: rgba(255, 255, 255, 0.025);
+				border: 1px solid rgba(255, 255, 255, 0.1);
+			}
+
+			.furry {
+				position: absolute;
+				top: 40px;
+				left: 40px;
+
+				width: 100px;
+				height: auto;
+			}
+
+			.mdi::after {
+				text-decoration: none;
 			}
 		</style>
 	</head>
@@ -57,50 +73,67 @@
 			</header>
 
 			<main class="px-3 text-center cover-container mx-auto">
-				<h1>It's &lt;h1&gt;</h1>
-				<p class="lead">
-					Это какой-то бессмысленный кусок текста на странном языке.
-				</p>
-        <p style="word-break: keep-all;">
-          Ａｓ　ｙｏｕ　ｃａｎ　ｓｅｅ，　ｉｔ　ｉｓ　ｖｅｒｙ　「ａｅｓｔｈｅｔｉｃａｌｌｙ　ｐｌｅａｓｉｎｇ」！！！
-        </p>
-				<h2>
-					<i class="mdi mdi-cat" aria-hidden="true"></i>＜ｈ２＞ですにゃぁぁ。<i
-						class="mdi mdi-cat"
-						aria-hidden="true"
-					></i>
-				</h2>
-				<h3>
-					<i class="mdi mdi-cat" aria-hidden="true"></i
-					>＜ｈ３＞ですにゃぁぁぁ。<i
-						class="mdi mdi-cat"
-						aria-hidden="true"
-					></i>
-				</h3>
-				<h4>
-					<i class="mdi mdi-cat" aria-hidden="true"></i
-					>＜ｈ４＞ですにゃぁぁぁぁ。<i
-						class="mdi mdi-cat"
-						aria-hidden="true"
-					></i>
-				</h4>
-				<h5>
-					<i class="mdi mdi-cat" aria-hidden="true"></i
-					>＜ｈ５＞ですにゃぁぁぁぁぁ。<i
-						class="mdi mdi-cat"
-						aria-hidden="true"
-					></i>
-				</h5>
-				<h6>
-					<i class="mdi mdi-cat" aria-hidden="true"></i
-					>＜ｈ６＞ですにゃぁぁぁぁぁぁ。<i
-						class="mdi mdi-cat"
-						aria-hidden="true"
-					></i>
-				</h6>
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-md-6 section">
+							<a id="qlink" class="text-reset text-decoration-none">
+								<h1>Quote API</h1>
+								<p id="quote"></p>
+								<p class="text-white-50">
+									by
+									<span class="text-decoration-underline" id="author"></span>
+								</p>
+							</a>
+						</div>
+						<div class="col-12 col-md-6 section">
+							<h1>It's &lt;h1&gt;</h1>
+							<p class="lead">
+								Это какой-то бессмысленный кусок текста на странном языке.
+							</p>
+							<p style="word-break: keep-all">
+								Ａｓ　ｙｏｕ　ｃａｎ　ｓｅｅ，　ｉｔ　ｉｓ　ｖｅｒｙ　「ａｅｓｔｈｅｔｉｃａｌｌｙ　ｐｌｅａｓｉｎｇ」！！！
+							</p>
+							<h2>
+								<i class="mdi mdi-cat" aria-hidden="true"></i
+								>＜ｈ２＞ですにゃぁぁ。<i
+									class="mdi mdi-cat"
+									aria-hidden="true"
+								></i>
+							</h2>
+							<h3>
+								<i class="mdi mdi-cat" aria-hidden="true"></i
+								>＜ｈ３＞ですにゃぁぁぁ。<i
+									class="mdi mdi-cat"
+									aria-hidden="true"
+								></i>
+							</h3>
+							<h4>
+								<i class="mdi mdi-cat" aria-hidden="true"></i
+								>＜ｈ４＞ですにゃぁぁぁぁ。<i
+									class="mdi mdi-cat"
+									aria-hidden="true"
+								></i>
+							</h4>
+							<h5>
+								<i class="mdi mdi-cat" aria-hidden="true"></i
+								>＜ｈ５＞ですにゃぁぁぁぁぁ。<i
+									class="mdi mdi-cat"
+									aria-hidden="true"
+								></i>
+							</h5>
+							<h6>
+								<i class="mdi mdi-cat" aria-hidden="true"></i
+								>＜ｈ６＞ですにゃぁぁぁぁぁぁ。<i
+									class="mdi mdi-cat"
+									aria-hidden="true"
+								></i>
+							</h6>
+						</div>
+					</div>
+				</div>
 			</main>
 
-			<footer class="mt-auto text-white-50">
+			<footer class="mt-auto text-white-50 section">
 				<div class="p-4">
 					© 2022 Copyright:
 					<span class="text-reset fw-bold" href="https://mdbootstrap.com/">
@@ -109,20 +142,22 @@
 				</div>
 				<ul class="text">
 					<li>
-						<i class="mdi mdi-github"></i>
 						<a
 							href="https://github.com/chermnyx/f22-inno-frontend"
-							class="text-reset"
-							>chermnyx/f22-inno-frontend</a
+							class="text-reset text-decoration-none"
 						>
+							<i class="mdi mdi-github"></i>
+							<span class="text-decoration-underline">chermnyx/f22-inno-frontend</span>
+						</a>
 					</li>
 					<li>
-						<i class="mdi mdi-email"></i>
 						<a
-							class="text-reset"
+							class="text-reset text-decoration-none"
 							href="mailto: d.chermnykh@innopolis.university"
-							>d.chermnykh@innopolis.university</a
 						>
+							<i class="mdi mdi-email"></i>
+							<span class="text-decoration-underline">d.chermnykh@innopolis.university</span>
+						</a>
 					</li>
 				</ul>
 			</footer>
