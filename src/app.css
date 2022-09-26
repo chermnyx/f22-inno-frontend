@@ -27,15 +27,29 @@ body {
 }
 
 .anime {
-    animation: anime 3s infinite;
+	animation: anime 3s infinite;
 }
 
 @keyframes anime {
-	0% { color: red }
-    19.8% { color: orange }
-	39.6% { color: yellow }
-	59.4% { color: green }
-	79.2% { color: blue }
-	99% { color: violet }
-	100% { color: red; }
+	0% {
+		color: red;
+	}
+	19.8% {
+		color: orange;
+	}
+	39.6% {
+		color: yellow;
+	}
+	59.4% {
+		color: green;
+	}
+	79.2% {
+		color: blue;
+	}
+	99% {
+		color: violet;
+	}
+	100% {
+		color: red;
+	}
 }
