@@ -8,6 +8,9 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
+		paths: {
+			base: '/f22-inno-frontend'
+		},
 		adapter: adapter({
 			fallback: 'index.html'
 		}),
