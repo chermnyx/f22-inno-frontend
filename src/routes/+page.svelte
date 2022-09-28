@@ -42,7 +42,7 @@
 							</span>
 						</p>
 					</a>
-				{:catch error}
+				{:catch}
 					<div class="col-12 col-md-6 section">
 						<p class="text-danger">An error occurred!</p>
 					</div>
