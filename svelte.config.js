@@ -12,6 +12,9 @@ const config = {
 	}),
 
 	kit: {
+		alias: {
+			$lib: 'lib'
+		},
 		paths: {
 			base: '/f22-inno-frontend'
 		},
