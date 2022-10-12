@@ -2,10 +2,8 @@
 	import '../app.css';
 	export const prerender = false;
 	export const ssr = false;
-	import Joke from '$lib/Joke.svelte';
 	import Footer from '$lib/Footer.svelte';
 	import Header from '$lib/Header.svelte';
-	import StrangeHeaders from '$lib/StrangeHeaders.svelte';
 </script>
 
 <svelte:head>

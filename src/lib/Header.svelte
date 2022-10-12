@@ -4,7 +4,6 @@
 	import Icon from './Icon.svelte';
 
 	$: relativePath = $page.url.pathname.replace(base, '').replace(/\/$/, '');
-	console.log(relativePath)
 </script>
 
 <nav class="mb-auto navbar navbar-dark navbar-expand-lg">

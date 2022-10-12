@@ -7,18 +7,16 @@
 	<title>Ｍａｉｎ　ｐａｇｅ</title>
 </svelte:head>
 
-<div class="d-flex w-100 h-100 p-3 mx-auto flex-column">
-	<main class="px-3 text-center cover-container mx-auto">
-		<div class="container">
-			<div class="row">
-				<div class="col-12 col-md-6 section">
-					<Joke />
-				</div>
+<main class="px-3 text-center cover-container mx-auto">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-6 section">
+				<Joke />
+			</div>
 
-				<div class="col-12 col-md-6 section">
-					<StrangeHeaders />
-				</div>
+			<div class="col-12 col-md-6 section">
+				<StrangeHeaders />
 			</div>
 		</div>
-	</main>
-</div>
+	</div>
+</main>
