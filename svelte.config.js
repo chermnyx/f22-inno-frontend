@@ -18,10 +18,8 @@ const config = {
 		paths: {
 			base: '/f22-inno-frontend'
 		},
-		adapter: adapter({
-			fallback: 'index.html'
-		}),
-		prerender: { entries: [] }
+		adapter: adapter({}),
+		appDir: 'internal'
 	}
 };
 
